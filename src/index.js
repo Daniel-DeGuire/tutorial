@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDom from "react-dom";
 
+// CSS
+import "./index.css";
+
 // JSX rules
 // Return single element
 // div/ section/ article or Fragment
@@ -12,21 +15,39 @@ import ReactDom from "react-dom";
 //stateless functional component
 // always return JSX
 
-function Greeting() {
+// Nested Components, React TOols
+
+function BookList() {
   return (
-    <React.Fragment>
-      <h3>hello word</h3>
-      <ul>
-        <li>
-          <a href="#">hello world</a>
-        </li>
-      </ul>
-    </React.Fragment>
+    <section className="booklist">
+      <Book />
+      <Book />
+      <Book />
+    </section>
   );
 }
 
-// const Greeting = () => {
-//   return React.createElement("h1", {}, "hello world");
-// };
+const Book = () => {
+  return (
+    <article className="box">
+      <Image />
+      <Title />
+      <Author />
+    </article>
+  );
+};
 
-ReactDom.render(<Greeting />, document.getElementById("root"));
+const Image = () => (
+  <img
+    src="https://images-na.ssl-images-amazon.com/images/I/8144Vic9C5L._AC_UL604_SR604,400_.jpg"
+    width="260"
+    height="150px"
+    alt=""
+  />
+);
+
+const Author = () => <h2> Alice Schertle</h2>;
+
+const Title = () => <h1>Little Blue Truck's Springtime</h1>;
+
+ReactDom.render(<BookList />, document.getElementById("root"));
