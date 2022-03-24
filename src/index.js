@@ -27,6 +27,7 @@ function BookList() {
 
 const Book = () => {
   const title = "I Love You to the Moon and Back";
+  const author = "Amelia Hepworth";
   return (
     <article className="box">
       <img
@@ -36,7 +37,9 @@ const Book = () => {
         alt=""
       />
       <h1>{title}</h1>
-      <h4>Amelia Hepworth</h4>
+      <h4>{author}</h4>
+      {/* <p>{let x=6}</p> */}
+      <p>{6 + 6}</p>
     </article>
   );
 };
