@@ -21,33 +21,24 @@ function BookList() {
   return (
     <section className="booklist">
       <Book />
-      <Book />
-      <Book />
     </section>
   );
 }
 
 const Book = () => {
+  const title = "I Love You to the Moon and Back";
   return (
     <article className="box">
-      <Image />
-      <Title />
-      <Author />
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/I/8144Vic9C5L._AC_UL604_SR604,400_.jpg"
+        width="300"
+        height="250"
+        alt=""
+      />
+      <h1>{title}</h1>
+      <h4>Amelia Hepworth</h4>
     </article>
   );
 };
-
-const Image = () => (
-  <img
-    src="https://images-na.ssl-images-amazon.com/images/I/8144Vic9C5L._AC_UL604_SR604,400_.jpg"
-    width="260"
-    height="150px"
-    alt=""
-  />
-);
-
-const Author = () => <h2> Alice Schertle</h2>;
-
-const Title = () => <h1>Little Blue Truck's Springtime</h1>;
 
 ReactDom.render(<BookList />, document.getElementById("root"));
