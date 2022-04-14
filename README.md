@@ -4,4 +4,4 @@
 
 ## Goals
 
-### Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks - React JS
+### Learn Fundamentals, Hooks, Context API, React Router, Custom Hooks - React JS etc.
