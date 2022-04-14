@@ -12,6 +12,10 @@ body{
     font-size: 12px;
     background: grey;
 }
+img{
+    width: 60%;
+    height: 80%;
+}
 .booklist{
     width: 90vw;
     max-width: 1170px;
@@ -19,7 +23,7 @@ body{
     display: grid;
     gap: 2rem
 }
-.box{
+.book{
     background:white;
     border: 1px solid;
     padding: 1rem;
